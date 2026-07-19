@@ -65,6 +65,7 @@ void GcodeSuite::M115() {
     "PROTOCOL_VERSION:" PROTOCOL_VERSION " "
     "MACHINE_TYPE:" MACHINE_NAME " "
     "EXTRUDER_COUNT:" STRINGIFY(EXTRUDERS) " "
+    //"F_CPU:" STRINGIFY(F_CPU) " "
     #if NUM_AXES != XYZ
       "AXIS_COUNT:" STRINGIFY(NUM_AXES) " "
     #endif

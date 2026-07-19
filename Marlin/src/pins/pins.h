@@ -609,6 +609,11 @@
   #include "stm32f1/pins_ERYONE_ERY32_MINI.h"   // STM32F103VET6                          env:ERYONE_ERY32_MINI_maple
 #elif MB(PANDA_PI_V29)
   #include "stm32f1/pins_PANDA_PI_V29.h"        // STM32F103RCT6                          env:PANDA_PI_V29
+// PANDAPLACER START
+#elif MB(PANDAPLACER_MC_V2_0)
+  #include "stm32f1/pins_PANDAPLACER_MC_V2_0.h"   // STM32F103RCT6                          env:PANDAPLACER_MC_V2_0
+// PANDAPLACER END
+
 
 //
 // ARM Cortex-M4F

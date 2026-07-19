@@ -951,7 +951,12 @@ void minkill(const bool steppers_off/*=false*/) {
 
   #else
 
-    for (;;) hal.watchdog_refresh();  // Wait for RESET button or power-cycle
+    // for (;;) hal.watchdog_refresh();  // Wait for RESET button or power-cycle
+
+    // Wait for 5 seconds for controller to catch up
+    for (int i = 5000; i--;) { DELAY_US(1000); hal.watchdog_refresh(); } // 5000*1ms = 3s
+    // Auto-reset after kill
+    HAL_reboot();
 
   #endif
 }

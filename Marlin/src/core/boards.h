@@ -368,6 +368,9 @@
 #define BOARD_ZONESTAR_ZM3E4V2        4064  // Zonestar ZM3E4 V2 (STM32F103VC)
 #define BOARD_ERYONE_ERY32_MINI       4065  // Eryone Ery32 mini (STM32F103VE)
 #define BOARD_PANDA_PI_V29            4066  // Panda Pi V2.9 - Standalone (STM32F103RC)
+// PANDAPLACER START
+#define BOARD_PANDAPLACER_MC_V2_0      4099  // Pandaplacer MotionController V2.0 (STM32F103RC)
+// PANDAPLACER END
 
 //
 // ARM Cortex-M4F

@@ -23,6 +23,15 @@
 
 #define REVERSE_TEMP_SENSOR_RANGE_20 1
 
+// PANDAPLACER -100kPa VaccumSensor
+// Vaccum=-67kpa@Vout=2.0V
+constexpr temp_entry_t temptable_20[] PROGMEM = {
+  { OV(  40),   0 },
+  { OV(622), 67 },
+  { OV(932), 100 }
+};
+
+/*
 // Pt100 with INA826 amp on Ultimaker v2.0 electronics
 constexpr temp_entry_t temptable_20[] PROGMEM = {
   { OV(  0),    0 },
@@ -75,3 +84,5 @@ constexpr temp_entry_t temptable_20[] PROGMEM = {
   { OV(917), 1000 },
   { OV(968), 1100 }
 };
+
+*/
